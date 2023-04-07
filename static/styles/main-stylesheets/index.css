@@ -1,0 +1,33 @@
+/*resets*/
+@import "../resets/normalize.css";
+
+/*variables*/
+@import "../variables/colors.css";
+
+/*animations*/
+@import "../animations/toggle-visibility.css";
+@import "../animations/expand-note.css";
+
+/*base*/
+@import "../base/base.css";
+
+/*utils-styles*/
+
+/*components*/
+/*UI*/
+@import "../components/UI/my-btn.css";
+@import "../components/UI/form-btn.css";
+@import "../components/UI/search-bar-btn.css";
+
+/*UX*/
+@import "../components/UX/flash-messages.css";
+@import "../components/UX/txtarea-scrollbar.css";
+@import "../components/UX/main-scrollbar.css";
+
+/*page-sections*/
+@import "../components/navbar/navbar.css";
+@import "../page-sections/index-main-section.css";
+@import "../page-sections/footer.css";
+
+/*config*/
+@import "../config/breakpoints/index-main-breakpoints.css";

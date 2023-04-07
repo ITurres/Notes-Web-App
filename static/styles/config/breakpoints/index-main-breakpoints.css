@@ -1,0 +1,5 @@
+@media (max-width: 400px) {
+  .navbar__link--wrapper {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,26 @@
+/*resets*/
+@import "../resets/normalize.css";
+
+/*variables*/
+@import "../variables/colors.css";
+
+/*animations*/
+
+/*base*/
+@import "../base/base.css";
+
+/*utils-styles*/
+
+/*components*/
+/*UI*/
+@import "../components/UI/my-btn.css";
+/*UX*/
+@import "../components/UX/failure-message.css";
+@import "../components/UX/main-scrollbar.css";
+
+/*page-sections*/
+@import "../page-sections/login-register-main-section.css";
+@import "../components/navbar/navbar.css";
+@import "../page-sections/footer.css";
+
+/*config*/

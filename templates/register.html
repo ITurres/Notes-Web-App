@@ -1,0 +1,58 @@
+{% extends "layout.html" %} {% block link %}
+href="../static/styles/main-stylesheets/register.css" rel="stylesheet" {%
+endblock %}{% block title %} Register {% endblock %} {% block nav%}
+<nav class="navbar navbar-dark bg-dark">
+  <div class="navbar__logo-wrapper">
+    <img
+      class="navbar__logo"
+      src="../static/media/notes-logo.png"
+      width="50"
+      height="50"
+      alt="note logo"
+    />
+    <p class="navbar__logo-text">Notes</p>
+  </div>
+  <a class="navbar__link" href="/login">Log in</a>
+</nav>
+{% endblock%} {% block main %}
+<div class="main__register">
+  <form action="/register" method="post">
+    <div class="mb-3">
+      <input
+        autocomplete="off"
+        autofocus
+        class="input form-control mx-auto w-auto"
+        id="username"
+        name="username"
+        placeholder="Username"
+        type="text"
+        value="{{ username }}"
+      />
+      <p class="form__warning">{{ username_failure }}</p>
+    </div>
+    <div class="mb-3">
+      <input
+        class="input form-control mx-auto w-auto"
+        id="password"
+        name="password"
+        placeholder="Password"
+        type="password"
+        value="{{ password }}"
+      />
+      <p class="form__warning">{{ password_failure }}</p>
+    </div>
+    <div class="mb-3">
+      <input
+        class="input form-control mx-auto w-auto"
+        id="confirmation"
+        name="confirmation"
+        placeholder="Enter password again"
+        type="password"
+        value="{{ confirmation }}"
+      />
+    </div>
+    <p class="form__warning">{{ confirmation_failure }}</p>
+    <button class="my-btn btn btn-primary" type="submit">Register</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+  background-color: var(--style-color-off-black);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input,
+.textarea,
+.input:focus,
+.textarea:focus {
+  background-color: var(--style-color-off-black);
+  color: var(--style-color-off-white);
+}
+
+.input:focus {
+  border: 1px solid var(--style-color-note-yellow);
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem var(--style-color-note-yellow);
+}

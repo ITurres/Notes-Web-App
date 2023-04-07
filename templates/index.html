@@ -1,0 +1,103 @@
+{% extends "layout.html" %} {% block link %}
+href="../static/styles/main-stylesheets/index.css" rel="stylesheet" {% endblock
+%} {% block title %} My notes {% endblock %} {% block nav%}
+<nav class="navbar navbar-dark bg-dark">
+  <div class="navbar__logo-wrapper">
+    <img
+      class="navbar__logo"
+      src="../static/media/notes-logo.png"
+      width="50"
+      height="50"
+      alt="note logo"
+    />
+    <p class="navbar__logo-text">Notes</p>
+  </div>
+  <a class="navbar__link" href="/logout">Log out</a>
+</nav>
+{% endblock%}{% block main %}
+<div class="main--wrapper">
+  <div class="search-bar--wrapper">
+    <form class="search-bar__form" action="/search-notes" method="post">
+      <input
+        autocomplete="off"
+        class="input search-bar__input"
+        type="search"
+        name="q"
+        placeholder="Search"
+      />
+      <button class="input search-bar__input-btn" type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+  </div>
+  <div>
+    <button class="add-new-note__btn" data-toggle-new-note-form>
+      <i class="fa-solid fa-plus fa-beat"></i>
+    </button>
+    <button
+      class="add-new-note__btn close-btn hidden"
+      data-toggle-new-note-form
+    >
+      <i class="fa-solid fa-xmark fa-flip"></i>
+    </button>
+    <form
+      class="new-note-form hidden"
+      action="/add-new-note"
+      method="post"
+      data-new-note-form
+    >
+      <textarea
+        class="new-note__text textarea-custom-scrollbar"
+        name="note-content"
+        rows="3"
+      ></textarea>
+      <button class="my-btn btn btn-primary" type="submit">Done</button>
+    </form>
+  </div>
+  <table class="table table-striped">
+    {% for note in user_notes %}
+    <tbody class="note-body" data-note-body>
+      <tr>
+        <td class="text-start">
+          <form class="note-form" action="/update-note" method="post">
+            <textarea
+              class="note__text textarea-custom-scrollbar"
+              name="note-content"
+              rows="3"
+              data-note-textarea
+            >
+{{ note.note_content }}</textarea
+            >
+            <input
+              class="input"
+              name="note-id"
+              type="hidden"
+              value="{{ note.id }}"
+            />
+            <div class="form__btn--wrapper hidden">
+              <button class="update-btn" type="submit">Done</button>
+              <button
+                class="delete-btn"
+                formaction="/delete-note"
+                type="submit"
+              >
+                Delete
+              </button>
+            </div>
+          </form>
+        </td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</div>
+{% block body %}
+<script
+  src="../static/js/animations/toggle-visibility.js"
+  type="text/javascript"
+></script>
+<script
+  src="../static/js/animations/toggle-note-height.js"
+  type="text/javascript"
+></script>
+{% endblock%} {% endblock %}

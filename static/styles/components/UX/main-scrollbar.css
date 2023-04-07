@@ -1,0 +1,11 @@
+body::-webkit-scrollbar {
+  width: 1em;
+  background-color: var(--style-flash-color-yellow);
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset var(--style-color-dark-gray);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--style-color-dark-gray);
+  border-radius: 1rem;
+}

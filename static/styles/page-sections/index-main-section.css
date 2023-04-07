@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Source+Code+Pro:wght@300&display=swap");
+
+main {
+  position: relative;
+  min-height: calc(100vh - 126px); /* subtract navbar's && footer's height*/
+  min-height: calc(100svh - 126px); /* subtract navbar's && footer's height*/
+}
+
+.main--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar--wrapper {
+  margin: 0 1rem 2rem 1rem;
+}
+
+.search-bar__form,
+.search-bar__input,
+.search-bar__input-btn {
+  border-radius: 1rem;
+  background-color: var(--style-color-dark-gray);
+}
+
+.search-bar__form {
+  width: fit-content;
+}
+
+.search-bar__input {
+  border: none;
+  padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+}
+
+.search-bar__input:focus {
+  background-color: var(--style-color-dark-gray);
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.results {
+  font-size: 1rem;
+  color: var(--style-color-note-yellow);
+}
+.navbar__link--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/*NOTES styles*/
+
+.note-form {
+  box-shadow: inset 0 0 0 9999px var(--style-color-bootstrap-gray);
+}
+
+.new-note-form {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.note-body {
+  background-color: var(--style-color-bootstrap-gray);
+  box-shadow: 0 0 0 1px var(--style-color-bootstrap-gray);
+  border-bottom: 2px solid var(--style-color-dark-gray);
+}
+
+.note-body:first-of-type {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.note-body:last-of-type {
+  border-radius: 0 0 1rem 1rem;
+  border-bottom: none;
+}
+
+textarea.note__text,
+textarea.new-note__text {
+  color: var(--style-color-off-white);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  border: none;
+  outline: none;
+}
+textarea.note__text {
+  background-color: var(--style-color-bootstrap-gray);
+  resize: none;
+}
+
+textarea.new-note__text {
+  background-color: var(--style-color-bootstrap-gray-2);
+  margin-bottom: 1rem;
+  min-height: 100px;
+}
+
+/*override bootstrap style*/
+.table > :not(caption) > * > * {
+  padding: 0;
+  border-bottom-width: 0;
+  box-shadow: inset 0 0 0 9999px var(--style-color-bootstrap-gray);
+}
+.table > :not(caption) > * > *:first-of-type {
+  border-radius: 1rem 1rem 0 0;
+  background-color: transparent;
+}

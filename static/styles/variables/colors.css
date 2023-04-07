@@ -1,0 +1,13 @@
+:root {
+  --style-color-off-black: #272b2e;
+  --style-color-navbar-black: #212529;
+  --style-color-dark-gray: #36393c;
+  --style-color-off-white: #f5f5f5;
+  --style-color-note-yellow: #fdcd47;
+  --style-color-note-dark-yellow: #e9b31f;
+  --style-color-note-dark-red: darkRed;
+  --style-color-bootstrap-gray: rgb(0 0 0 / 10%);
+  --style-color-bootstrap-gray-2: #181d1e;
+  /* flash messages color */
+  --style-flash-color-yellow: #ebe53f77;
+}

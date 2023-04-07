@@ -1,0 +1,12 @@
+.textarea-custom-scrollbar::-webkit-scrollbar {
+  padding-top: 1rem;
+  width: 0.5em;
+}
+.textarea-custom-scrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset var(--style-color-dark-gray);
+}
+.textarea-custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--style-color-dark-gray);
+  /* outline: 1px solid var(--style-color-dark-gray); */
+  border-radius: 1rem;
+}

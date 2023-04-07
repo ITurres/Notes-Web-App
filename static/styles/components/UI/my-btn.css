@@ -1,0 +1,35 @@
+button.my-btn.btn.btn-primary {
+  border-radius: 0.5rem;
+  background-color: var(--style-color-note-yellow);
+  color: var(--style-color-off-black);
+  border-color: unset;
+  font-weight: bold;
+  box-shadow: unset;
+}
+
+button.my-btn.btn.btn-primary:hover {
+  background-color: var(--style-color-note-dark-yellow);
+  color: var(--style-color-off-black);
+  border-color: unset;
+}
+
+button.add-new-note__btn {
+  background-color: var(--style-color-bootstrap-gray-2);
+  color: var(--style-color-dark-gray);
+  font-weight: bold;
+  padding: 0.2rem;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  width: 2.3rem;
+  border: 2px solid var(--style-color-dark-gray);
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+button.add-new-note__btn:hover {
+  transform: scale(1.2);
+}
+
+button.add-new-note__btn.close-btn {
+  margin-bottom: 0.5rem;
+}

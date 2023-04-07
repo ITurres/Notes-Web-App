@@ -1,0 +1,18 @@
+.my-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  z-index: 50; /*less than nav but more than else*/
+  width: 100%;
+  background-color: var(--style-color-navbar-black);
+  height: 2.5rem;
+}
+
+.my-footer > a {
+  color: var(--style-color-note-yellow);
+}
+
+.my-footer > p {
+  margin-bottom: 0;
+}

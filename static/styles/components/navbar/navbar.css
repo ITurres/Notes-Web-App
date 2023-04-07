@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+}
+
+.navbar__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.navbar__logo {
+  width: 100%;
+  min-width: 70px;
+  min-height: 70px;
+}
+
+.navbar__logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.navbar__link {
+  color: var(--style-color-note-yellow);
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar__link:hover {
+  color: var(--style-color-note-yellow);
+  text-decoration: underline;
+}

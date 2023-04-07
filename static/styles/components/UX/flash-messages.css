@@ -1,0 +1,8 @@
+.alert-primary {
+  width: 100%;
+  font-weight: bold;
+  color: var(--style-color-off-black);
+  background-color: var(--style-flash-color-yellow);
+  border-color: var(--style-color-note-dark-yellow);
+  padding: 0.2rem;
+}
