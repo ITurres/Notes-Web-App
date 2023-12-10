@@ -111,7 +111,7 @@ def register():
         session["user_id"] = user_data[0]["id"]
 
         flash(
-            f"Hello {username.capitalize()}!, you were successfully Register!")
+            f"Hello {username.capitalize()}!, you were successfully Registered!")
         return redirect("/")
     else:
         return render_template("register.html")
